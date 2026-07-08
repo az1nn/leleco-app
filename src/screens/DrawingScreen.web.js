@@ -6,6 +6,9 @@ import { colors } from '../theme/colors';
 export default function DrawingScreen() {
   return (
     <WithSkiaWeb
+      opts={{
+        locateFile: (file) => `https://cdn.jsdelivr.net/npm/canvaskit-wasm@0.41.0/bin/full/${file}`
+      }}
       getComponent={() => import('./DrawingScreenInner')}
       fallback={
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
