@@ -18,7 +18,12 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "shortName": "Leleco",
+      "name": "Leleco MVP",
+      "themeColor": "#E6F4FE",
+      "backgroundColor": "#FFFFFF",
+      "display": "standalone"
     }
   }
 }
